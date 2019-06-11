@@ -1,0 +1,47 @@
+
+#txtbox {
+    font-size: 18pt;
+    height: 22px;
+    width : 300px;
+}
+body{
+    font-size: 13px;
+    line-height: 19px;
+    color: #111;
+    font-family: Arial,sans-serif;
+}
+div {
+    display: block;
+}
+#regform{
+  display:block;
+  border-radius: 5px;
+ border:1px #0c0b0b solid;
+ border-color: #0e0b0b;
+ background-color: #ffffff;
+ margin:auto;
+ padding-left:25px;
+ padding-right: 25px;
+ line-height: 1.6; 
+ width:350px;
+ 
+}
+button{
+    background-color: chocolate;
+    height: 22px;
+    width : 150px;
+}
+#phone{
+    height: 22px;
+    width : 150px;
+}
+input:focus { 
+    border-color: chocolate;
+ 
+}
+#leg:focus{
+    font-size: 18pt;
+    height: 22px;
+    width : 300px;
+    
+}
