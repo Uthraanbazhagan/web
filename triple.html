@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+  <script>
+  function guess(){
+    var d= Number(document.getElementById("num").value);
+    var e= Number(document.getElementById("num1").value);
+    if(d == e)
+    document.getElementById("result").innerHTML =d*d*d;
+    else
+    document.getElementById("result").innerHTML =d+e;
+  alert(window.location.href);
+
+  }
+  
+  
+  </script>
+
+
+    </head>
+    
+<body>
+        enter two number:
+        <input id="num">
+        <input id="num1">
+        <button id="gue" onclick="guess()">click it</button>
+        <div id="result"></div>
+        
+</body>
+</html>

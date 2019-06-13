@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>guess it</title> 
+    <script>
+            function guess(){
+                var c= Number(Math.floor((Math.random() * 0) + 1)); 
+                var d= Number(document.getElementById("num").value);
+                if(c==d)
+                {
+                document.getElementById("result").innerHTML ="good work";
+               // document.writeln("True"); 
+                }
+                else{
+                document.getElementById("result").innerHTML ="not matched"; 
+               // document.writeln("false");
+                }
+                }
+   </script> 
+</head>
+<body>
+Guess the number:
+<input id="num">
+<button id="gue" onclick="guess()">ready</button>
+<div id="result"></div>
+
+</body>
+</html>

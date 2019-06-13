@@ -5,20 +5,35 @@
     <link rel="stylesheet" href="form.css">
     <script src="main.js"></script>
     <script>
-   
-    
+        function check(){
+       var ch=document.getElementById("txtbox1").value;
+       var ch1=document.getElementById("txtbox2").value;
+       if (ch == "") {
+        document.getElementById("c").innerHTML ="enter the name !!!";
+        document.getElementById("txtbox1").style.borderColor = "red";
+
+      }     
+      if (ch1 == "") {
+        document.getElementById("c1").innerHTML ="enter password !!!";
+        document.getElementById("txtbox2").style.borderColor = "red";
+
+      }     
+       
+      return false;
+        }
     
     </script>
 </head>
 <div align="center" id="regform">
 <body onclick="bord()">
     <img src="C:\Users\vshadmin\Pictures\Screenshots\Screenshot (2).jpg" />
-    <form>
+    <form method="POST" onsubmit="return check()">
             
         <h1>Registration</h1>
    <b> Your name</b>
-    <input type="text"  required id="txtbox"/>
+    <input type="text"  id="txtbox1"/>
     <br />
+    <p id="c"> </p>
     <b> Mobile number</b> <br />
     <select id="phone">
         <option>IN +91</option>
@@ -26,19 +41,21 @@
     </select>
     <fieldset>
     <legend>Mobile</legend>
-   <input type="number" id="leg" placeholder="Mobile Number" required id="phone"  />
+   <input type="number" id="leg" placeholder="Mobile Number"  pattern="0-10{10}" id="phone"  />
+   <p id="c"> </p>
     </fieldset>
     <br />
 <b>Email(Optional)</b><br />
     <input type="email" id="txtbox" />
     <br />
 <b>  Password</b><br />
-    <input type="password" placeholder="atleast 6 characters"  required id="txtbox" />
+    <input type="password" placeholder="atleast 6 characters" pattern="[a-z1-9]{6}"  id="txtbox2" />
+    <p id="c1"></p>
     <br />
     <label>We will send you a text to verify your phone.<label/><br/>
     <label>Message and Data rates may apply.</label>
             <br />
-    <button type="submit">Continue</button id="txtbox">
+    <button type="submit" onclick="check()">Continue</button id="txtbox">
 
 
 
