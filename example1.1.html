@@ -10,7 +10,11 @@
     <script>
     jQuery(function(){
       //  $("#products > li").css("color","red");
-       $("#products li:nth-child(2),ul:first,#services li:first").css("color","red");
+      // $("#products li:nth-child(2),ul:first,#services li:first").css("color","red");
+      $("#products").find("li").first().css("color","red");
+        $("#products").children("li").css("color","green");
+        $("li").last().prev().css("color","orange");
+        $("li").last().hide();
     })
     </script>
 </head>

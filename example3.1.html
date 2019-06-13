@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+    $(function(){
+      //  $("#products > li").css("background:transparent");
+     $("button").click(function(){
+         var para=$("<p/>")
+
+              .text("4500 Rs.")
+                .attr("style","color:red");
+                $(this).next().remove();
+                $(this).after(para);
+
+               
+                //$(".product").find("nth-child(1)").remove();
+                //$(".product").find("nth-child(1)").append(para);
+        //var para1=$("<p/>").text("150 Rs").attr("style","color:red");
+        //$(".product").find("nth-child(2)").remove();
+          //      $(".product").find("nth-child(2)").append(para1);
+
+
+
+     })
+    })
+    
+    </script>
+    <style>
+    ul
+    {
+  display:flex;  
+  list-style:none;
+    }
+    </style>
+</head>
+<body>
+    <ul class="product">
+    <li >
+        <h2>Nokia</h2>
+        <button>get price</button>
+        
+    </li>
+    <li class="product" style="list-style:none">
+            <h2>samsung</h2>
+            <button>get price</button>
+            
+        </li>
+    
+        <li class="product" style="list-style:none">
+                <h2>apple</h2>
+                <button>get price</button>
+                
+            </li>
+            
+    </ul>
+</body>
+</html>
